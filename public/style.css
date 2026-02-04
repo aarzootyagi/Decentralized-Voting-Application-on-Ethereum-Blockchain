@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .container {
+    background: #ffffff;
+    color: #333;
+    width: 420px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #203a43;
+    font-size: 22px;
+  }
+  
+  #connectBtn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  #connectBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+  }
+  
+  #candidates {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .candidate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f4f7fb;
+    box-shadow: inset 0 0 0 1px #e0e6ed;
+  }
+  
+  .candidate-name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .vote-count {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .vote-btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .vote-btn:hover {
+    background: #218838;
+  }
+  
+  .vote-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+  }
+  
